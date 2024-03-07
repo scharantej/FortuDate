@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+</head>
+<body>
+<h1>Dashboard</h1>
+<h2>Matches</h2>
+<ul>
+{% for match in matches %}
+<li>{{ match.username }}</li>
+{% endfor %}
+</ul>
+<h2>Fortunetelling Insights</h2>
+<ul>
+<li>Daily Horoscope: {{ daily_horoscope }}</li>
+<li>Love Compatibility: {{ love_compatibility }}</li>
+<li>Personality Traits: {{ personality_traits }}</li>
+</ul>
+</body>
+</html>
+
